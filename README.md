@@ -4,4 +4,6 @@ provides uC with temperature and humidity and post it to a webpage, hosted on yo
 
 # The procedure.
 
-
+1) ESP8266 is connecting to our web router and is sending POST request to a specific path, which is a php file. This file will receive the request with the data and respond with a code to ESP8266.
+2) In the same time, is called another file in order to update the DB.
+3) After this, the main page will retrieve this information and post it to main page.
